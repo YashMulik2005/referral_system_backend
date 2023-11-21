@@ -7,6 +7,7 @@ const userroute = require("./route/user");
 app.use(
   cors({
     origin: "https://stalwart-begonia-f86121.netlify.app/",
+    methods: ["POST", "GET"],
   })
 );
 app.use(express.json());
